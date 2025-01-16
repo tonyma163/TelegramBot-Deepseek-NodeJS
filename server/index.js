@@ -3,7 +3,7 @@ require('dotenv').config();
 const { Bot } = require('grammy');
 const OpenAI = require('openai');
 
-const BOT_TOKEN = process.env.BOT_TOKEN;
+const prompt = "You are a helpful assistant.";
 
 // DeepSeek API
 const openai = new OpenAI({
@@ -14,6 +14,7 @@ const openai = new OpenAI({
 });
 
 // Initialize the bot with polling
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new Bot(BOT_TOKEN);
 
 // Handler
@@ -59,7 +60,7 @@ async function getAIResponse(userMessage) {
       messages: [
         {
           role: 'system',
-          content: 'You are a helpful assistant. Please answer my request in Traditional Chinese.',
+          content: prompt,
         },
         { role: 'user', content: userMessage },
       ],
