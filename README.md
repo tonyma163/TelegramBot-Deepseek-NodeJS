@@ -75,13 +75,9 @@ npm run format
 
 ## Docker Support
 
-Pull the pre-built Docker image (English response):
+Pull the pre-built Docker image:
 ```bash
-docker pull tonyma163/test:v1.1
-```
-Pull the pre-built Docker image (Chinese response):
-```bash
-docker pull tonyma163/test:v1.2
+docker pull tonyma163/tgbot-deepseek:v1.0
 ```
 
 Build and run the Docker container:
