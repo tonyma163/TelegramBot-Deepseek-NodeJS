@@ -3,7 +3,8 @@ require('dotenv').config();
 const { Bot } = require('grammy');
 const OpenAI = require('openai');
 
-const prompt = "You are a helpful assistant.";
+const prompt = `You are a helpful assistant.`;
+//const prompt = `You are a helpful assistant. Please communicate in traditional chinese/cantonese.`;
 
 // DeepSeek API
 const openai = new OpenAI({

@@ -75,6 +75,15 @@ npm run format
 
 ## Docker Support
 
+Pull the pre-built Docker image (English response):
+```bash
+docker pull tonyma163/test:v1.1
+```
+Pull the pre-built Docker image (Chinese response):
+```bash
+docker pull tonyma163/test:v1.2
+```
+
 Build and run the Docker container:
 ```bash
 docker build -t telegram-bot .
